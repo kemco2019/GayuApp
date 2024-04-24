@@ -1,0 +1,405 @@
+/* ===================================================================
+ * # background
+ *
+ * ------------------------------------------------------------------- */
+body{
+  background-color: #D9D9D9;
+}
+.main{
+  font-size: 50px;
+}
+/* ===================================================================
+ * # topimage
+ *
+ * ------------------------------------------------------------------- */
+
+ .commonContent{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+#kemlogo{
+    width: 100%;
+    height: auto;
+    padding: 1%;
+}
+#mode{
+    width:30%;
+    height: auto;
+    padding: 1%;
+}
+.homeicon{
+    text-align: center;
+    width: 10vw;
+    height: auto;
+    padding: 1%;
+}
+.homeicon img{
+  width: 60%;
+}
+
+/* ===================================================================
+ * # pagetop
+ *
+ * ------------------------------------------------------------------- */
+.top_images{
+    text-align: center;
+}
+.top2{
+    height: auto;
+}
+.select_sec {
+    width: 100%;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    background-image: url("../images/tab_back.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.level_tab_easy{
+    width: 100%;
+    background-image: url("../images/easy_tab.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.level_tab_hard{
+  width: 100%;
+  background-image: url("../images/hard_tab.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.level_tab_easy img{
+  width: 30%;
+  margin: 3% 0 2% 0;
+}
+.level_tab_hard img{
+  width: 30%;
+  margin: 3% 0 2% 0;
+}
+.select_tab{
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    margin: 1% 0;
+}
+.select_sec.fixed{
+    background-color: #4EB0C9;
+    z-index: 100;
+}
+.select_sec #mode{
+  width: 40vw;
+  height: auto;
+  padding: 0 30%;
+}
+.select_sec #select{
+    width: 22vw;
+    height: auto;
+}
+a.anchorLink{
+  display: block;
+    padding-top: calc(30vw);
+    margin-top: calc(-1 * 30vw);
+}
+/* ===================================================================
+ * # contents
+ *
+ * ------------------------------------------------------------------- */
+ .bigTitle img{
+  width: 100%;
+ }
+ .titleBox{
+    display: flex;
+    padding: 2% 2% 0;
+ }
+ 
+ #session_name{
+   font-size: 6vw;
+   font-family: 'Noto Serif JP', serif;
+ }
+.basic_info{
+    background-color:rgb(255, 255, 255);
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+#midashi{
+    width: 100%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+.section1{
+  background-color: rgba(212, 131, 105, 1);
+}
+.section2{
+  background-color: rgba(212, 131, 105, 1);
+}
+.section3{
+  background-color: rgba(242, 218, 88, 1);
+}
+.section4{
+  background-color: rgba(105, 212, 161, 1);
+}
+.midashi{
+  display: flex;
+}
+.midashi #midashi_num{
+  width: 30%;
+  font-family: 'Noto Serif JP', serif;
+  display: block;
+  font-size: 90px;
+  
+}
+.piece_item{
+  
+  display: block;
+}
+.btn-good {
+  display: inline-block;
+  padding: 0 8px;
+  cursor: pointer;
+  color: black;
+}
+
+.btn-good:hover {
+  color: #f44336;
+}
+
+.btn-good .active {
+  color: #f44336;
+}
+.midashi #midashi_detail{
+  width: 70%;
+  background-color: white;
+  font-family: 'Noto Serif JP', serif;
+  text-align: start;
+  padding: 2%;
+}
+#txt_l{
+  font-weight: bolder;
+  font-size: 50px;
+}
+#txt_m{
+  font-size: 30px;
+}
+#txt_s{
+  font-size: 20px;
+}
+.txtBox{
+    padding: 0px 5%;
+    font-family: 'Noto Sans JP', sans-serif;
+}
+.work_txt{
+    padding: 0px 5% 5%;
+    font-family: 'Noto Sans JP', sans-serif;
+    text-align: left;
+}
+.section-head{
+  text-align: center;
+}
+.slider-x{
+  height: auto;
+  width: 80%;
+  text-align: center;
+  margin: 3% auto 0%;
+  background: rgba(0, 0, 0, 0.2);
+}
+.slider-x > img{
+  width: 100%;
+  flex: none;
+}
+.main hr{
+  width: 95%;
+}
+
+.tategaki{
+  writing-mode: vertical-rl;
+  margin: auto;
+}
+
+
+
+
+
+/* ===================================================================
+ * # accordion
+ *
+ * ------------------------------------------------------------------- */
+ details summary {
+  text-align: center;
+    list-style: none;
+  cursor: pointer;
+  margin: 3% 20px 3%;
+  /*background: #e4e4e4;*/
+  color: #FFFFFF;
+  font-size: 3rem;
+  font-weight: bold;
+  font-family: 'Noto Serif JP', serif;
+  background-color: #433E3E;
+  }
+  /**
+   * Chrome用のデフォルト三角削除
+  **/
+  details summary::-webkit-details-marker {
+    display: none;
+  }
+  /**
+   アコーディオンクローズ時のアイコン
+  **/
+  details summary::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f078';
+    margin-right: 20px;
+  }
+  /**
+   アコーディオンがオープン時のアイコン
+  **/
+  details[open] > summary::before {
+    font-family: "Font Awesome 5 Free";
+    content: '\f077';
+  }
+
+
+/* ===================================================================
+ * # toppage
+ *
+ * ------------------------------------------------------------------- */
+ .front_txt{
+   padding: 2% 5%;
+   line-height: 170%;
+   color: #433E3E;
+   font-size: 40px;
+   font-family: 'Noto Sans JP', sans-serif;
+   font-weight: 500;
+ }
+ h2{
+  padding: 1% 5%;
+  font-size: 50px;
+  font-family: 'Noto Sans JP', sans-serif;
+  font-weight: 900;
+ }
+ .select-form-container img{
+   width: 100%;
+   height: auto;
+ }
+ .select-form-container input{
+  width: 100%;
+  height: 100%;
+}
+.box {
+  font-size: 80px; /* 40pxから調整しました */
+ }
+#kigaru{
+  width: 90%;
+  padding: 4%;
+  margin: auto;
+ }
+ #fukaku{
+  width: 90%;
+  padding: 4%;
+  margin: auto;
+}
+
+footer {
+  position:static;
+  bottom: 0;
+  width: 100%;
+  color: #000000;
+  text-align: center;
+}
+footer p {
+  display: inline-block;
+  font-family: serif;
+}
+footer p a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/* ===================================================================
+ * # column
+ *
+ * ------------------------------------------------------------------- */
+ .head_tab{
+    width: 100%;
+    background-image: url("../images/column_tab.png");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    text-align: start;
+ }
+ .head_tab img{
+  width: 30%;
+  margin: 3% 0 2% 0;
+}
+.column_name{
+  font-family: 'Noto Serif JP', sans-serif;
+  font-size: 60px;
+  font-weight: bold;
+}
+.auth_name{
+  font-family: 'Noto Serif JP', sans-serif;
+  font-size: 50px;
+  color: white;
+}
+
+/* ===================================================================
+ * # ranking
+ *
+ * ------------------------------------------------------------------- */
+ .rank_tab{
+  width: 100%;
+  background-image: url("../images/rank_tab.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  text-align: start;
+}
+.rank_tab img{
+width: 30%;
+margin: 3% 0 2% 0;
+}
+.ranknwork{
+  display: flex;
+  width: 95%;
+  margin: 3% auto;
+}
+.rankiine{
+  width: 30%;
+  font-size: 60px;
+  text-align: center;
+  font-family: 'Noto Serif JP', serif;
+  background-color: #FFFFFF;
+}
+.rank{
+  height: 129.5px;
+  line-height: 129.5px;
+  color: #FFFFFF;
+  background-color: #F6CA5A;
+}
+.iine{
+  margin: auto 0;
+}
+.workname #num{
+  font-size: 40px;
+  margin: 0;
+}
+.workname #name{
+  font-size: 50px;
+  margin: 0;
+}
+.workname{
+  background-color: #F6CA5A;
+  color: #FFFFFF;
+}
+.workinfo{
+  width: 70%;
+  font-family: 'Noto Serif JP', serif;
+  background-color: #FFFFFF;
+}
+.workinfo img{
+  width: 80%;
+  margin: 0 10%;
+}
